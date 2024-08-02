@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background: rgb(61,61,61);
+    background: radial-gradient(circle, rgba(61,61,61,1) 0%, rgba(0,0,0,1) 100%);
+    background-size: 100% 800px;
+}
+
+header {
+    font-family: "Montserrat", sans-serif;    color: white;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+header i {
+    font-size: 40px;
+    color: white;
+    padding: 5px;
+}
+
+nav {
+    margin-right: 70px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    padding: 40px;
+    left: -100%;
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        left: 0;
+    }
+}
+
+nav a:hover {
+    text-shadow: 0px 0px 10px white;
+}
+
+.inicio {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    margin-top: 90px;
+}
+
+.inicio hr {
+    width: 0;
+    position: absolute;
+    margin-top: -120px;
+    border: 1px solid white;
+    margin-left: -300px;
+    animation: grow 2s forwards;
+    text-shadow: 0px 7px 20px rgb(0, 0, 0);    
+}
+
+@keyframes grow {
+    to {
+        width: 150px;
+    }
+}
+
+.inicio h1 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 100px;
+    white-space: nowrap;
+    opacity: 0;
+    overflow: hidden;
+    animation: fadeIn 5s forwards;
+    text-shadow: 0px 7px 20px rgb(35, 35, 35);    
+    letter-spacing: 3px;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+.inicio h4 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: -70px;
+    margin-left: 300px;
+    animation: fadeIn 5s forwards;
+    opacity: 0;
+    text-shadow: 0px 7px 20px rgb(0, 0, 0);    
+    
+}
+
+.redes {
+    display: flex;
+}
+
+.redes .lgs{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+.redes .lgs i {
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    left: -100%;
+    animation: slideIn 1s forwards;
+}
+
+
+@keyframes slideIn {
+    to {
+        left: 0;
+    }
+}
+
+.redes i:hover {
+    text-shadow: 0px 0px 10px white;
+}
+
+.sobre {
+    height: 600px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    margin-top: 400px;
+}
+
+.sobre section {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre section div {
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre section img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.sobre section h1 {
+    margin-left: 60px;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.sobre section p {
+    margin-left: 60px;
+    width: 700px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.projetos {
+    height: 600px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+#projetos {
+    animation: fadeIn 5s forwards;
+    opacity: 0;
+    font-size: 40px;
+}
+
+.projetos section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projetos section div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: -7px 7px 10px rgb(25, 25, 25);    
+    border: 0;
+    margin: 5px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.projetos section div h1 {
+    color: white;
+    margin-top: 10px;
+}
+
+.projetos section div h2 {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: -15px;
+}
+
+
+.projetos section img{
+    width: 400px;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+    border-radius: 25px;
+    padding: 20px;
+    transition: transform 0.5s;
+}
+
+.projetos section div:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+
+
+.conhecimentos  {
+    height: 500px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+#conhecimentos {
+    animation: fadeIn 5s forwards;
+    opacity: 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.conhecimentos  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conhecimentos  section div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    margin: 5px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    padding: 50px;
+    width: 200px;
+}
+
+.conhecimentos  section div h1 {
+    color: white;
+    margin-top: 10px;
+}
+
+.conhecimentos  section div h2 {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: -15px;
+}
+
+
+.conhecimentos section i{
+    font-size: 80px;
+}
+
+.conhecimentos section i:hover{
+    text-shadow: -1px 1px 20px rgb(0, 0, 0) ;
+    position: relative;
+    animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: 10px;
+}
+}
+
+#linha {
+    width: 100px;
+    margin-top: -2px;
+}
+
+
+
+.contato {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.contato section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contato .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 200px;
+}
+
+.contato .text h1 {
+    font-size: 40px;
+}
+
+.contato .text p {
+    width: 450px;
+    text-align: center;
+    font-weight: 200;
+    text-align: justify;
+}
+
+.contato .contatos {
+    margin-top: 70px;
+}
+
+.contato .text .contatos div {
+    display: flex;
+    align-items: center;
+}
+
+.contato .text .contatos h4 {
+    font-weight: 600;
+}
+
+.contato .zap {
+    display: flex;
+    flex-direction: row;
+    margin-bottom:-20px;
+}
+
+.contato i {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding: 20px;
+}
+
+.contato .inputs form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -7px 7px 10px rgb(25, 25, 25);    
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+}
+
+.contato .inputs form input{
+    width: 500px;
+    height: 50px;
+    border: 0;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+}
+
+.contato .inputs form input::placeholder{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(137, 137, 137);
+    font-size: 15px;
+}
+
+.contato .inputs form button{
+    width: 300px;
+    height: 50px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    font-size: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.contato .inputs form button:hover{
+    text-shadow: 0px 0px 10px white;
+}

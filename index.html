@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Leonardo Vagner - Dev</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 id="logo"><span>LV</span> Dev</h1>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+            <div class="links" id="sidebar">
+                <a href="#inicio" id="inicio">Inicio</a>
+                <a href="#sobre" id="sobre">Sobre</a>
+                <a href="#projetos" id="projetosa">Projetos</a>
+                <a href="#habilidade" id="habilidades">Habilidades</a>
+                <a href="#contato" id="fale">Fale Comigo</a>
+            </div>
+            <input class="switch" id="theme-toggle" type="checkbox" checked="true">
+        </nav>
+    </header>
+
+    <section>
+        <div class="inicio">
+            <div class="textoInicio">
+                <h5><span>Olá</span> Me chamo</h5>
+            </div>
+            <h1>Leonardo Vagner</h1>
+            <h3>Front-end <span>Developer</span></h3>
+            <h6>Acadêmico em Desenvolvimento de Sistemas</h6>
+            <ul>
+                <li><a href="https://www.instagram.com/leonardovg_/" target="_blank"><i class="ri-instagram-line"></i></a></li>
+                <li><a href="#" target="_blank"><i class="ri-tiktok-fill"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5531998909253" target="_blank"><i class="ri-whatsapp-line"></i></a></li>
+                <li><a href="https://github.com/leonardovg270" target="_blank"><i class="ri-github-fill"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/leonardo-vagner-61b637231/" target="_blank"><i class="ri-linkedin-box-line"></i></a></li>
+            </ul>
+            <a href="#" id="CV" onclick="baixarcv()">Download CV</a>
+        </div>
+    </section>
+
+
+    <div class="section sobre" id="sobre">
+        <div class="text1">
+            <span>Um Pouco</span>
+            <h1>SOBRE MIM</h1>
+        </div>
+        <section>
+            <img src="perfil.jpg" alt="perfil">
+            <div>
+                <h2>Olá, me chamo Leonardo Vagner</h2>
+                <p>Lorem ipsum dolor sit amet eum, dolorem, voluptates aperiam cum rerum porro corporis quo ea, totam amet? Quisquam, odit recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, repellendus voluptate aperiam ipsam non officia cum? 
+                <br><br>Quasi voluptatum rerum libero veniam optio quod esse. Doloribus dolorem dolor explicabo maxime quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed, pariatur at voluptatum corrupti officia nesciunt facere soluta saepe voluptatibus deserunt quidem provident reiciendis? Eius explicabo similique aspernatur doloribus asperiores.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="section projetos">
+        <h1 id="projetos">Meus <span>Projetos</span></h1>
+        <section>
+            <div class="proj1" onclick="ir1()">
+                <img src="agenciaViajensFoto.png" alt="1">
+                <h1>Agência de Viagens</h1>
+                <h2>Landing Page</h2>
+            </div>
+            <div class="proj2" onclick="ir2()">
+                <img src="robsonHilarioFoto.png" alt="2">
+                <h1>Fotógrafo Robson</h1>
+                <h2>Landing Page</h2>
+            </div>
+            <div class="proj3" onclick="ir3()">
+                <img src="niqueFoto.png" alt="3">
+                <h1>Ecommerce Nique</h1>
+                <h2>Ecommerce</h2>
+            </div>
+        </section>
+    </div>
+
+    <div class="section habilidade">
+        <h1 id="habilidade">MINHAS <span>HABILIDADES</span></h1>
+        <section>
+            <div class="1">
+                <i class="ri-html5-fill"></i>
+                <h1>HTML5</h1>
+                <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML. </p>
+            </div>
+            <div class="2">
+                <i class="ri-css3-fill"></i>
+                <h1>CSS3</h1>
+                <p>Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags style.</p>
+            </div>
+            <div class="3">
+                <i class="ri-javascript-fill"></i>
+                <h1>JAVASCRIPT</h1>
+                <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="section contato">
+        <section>
+            <div class="text" id="contato">
+                <h1>FALE <span>COMIGO</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos non minima provident quos et voluptate alias eos facere, consectetur pariatur officiis, cupiditate possimus nam deleniti facilis, dolores distinctio blanditiis libero.</p>
+                <div class="contatos">
+                    <div class="zap">
+                        <i class="ri-whatsapp-line"></i>
+                        <h4>(31)99890-9253</h4>
+                    </div>
+                    <div class="email">
+                        <i class="ri-mail-line"></i>
+                        <h4>Leonardovagner270@gmail.com</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="inputs">
+                <form action="#">
+                    <input type="text" id="put" placeholder="Seu nome" required>
+                    <input type="text" id="put" placeholder="Seu número" required>
+                    <input type="email" itemid="put" name="" id="" placeholder="Seu e-mail" required>
+                    <input type="text" id="put" placeholder="Mensagem" required>
+                    <button type="submit">ENVIAR MENSAGEM</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Copyright © 2024 Leonardo Vagner. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
